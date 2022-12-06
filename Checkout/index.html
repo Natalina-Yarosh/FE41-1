@@ -15,7 +15,200 @@
 </head>
 
 <body>
+    <div class="checkout">
+        <div class="checkout__content">
+            <div class="checkout__section">
+                <form class="address">
+                    <div class="address__title">
+                        <button class="address__title address__title-mrs">Mrs.</button>
+                        <button class="address__title address__title-mr">Mr.</button>
+                    </div>
+                    <input class="address__input" type="text" placeholder="Имя *" id="name">
+                    <input class="address__input" type="text" placeholder="Фамилия *" id="last">
+                    <input class="address__input" type="text" placeholder="E-Mail" id="email">
+                    <div class="address__input--block">
+                        <input class="address__input block-street" type="text" placeholder="Улица *" id="street">
+                        <input class="address__input block-house" type="text" placeholder="Дом *" id="house">
+                    </div>
+                    <div class="address__input--block">
+                        <input class="address__input block-zip" type="text" placeholder="Индекс *" id="zip">
+                        <input class="address__input block-city" type="text" placeholder="Город *" id="city">
+                    </div>
+                    <input class="address__input" type="text" placeholder="Страна" id="country">
+                    <input class="address__input" type="text" placeholder="Номер телефона" id="phone">
+                    <div class="address__checkbox-group">
+                        <div class="address__checkbox-wrapper">
+                            <input class="address__checkbox" type="checkbox">
+                            <p class="address__checkbox-text">
+                                Создайте учетную запись клиента сейчас и пользуйтесь преимуществами.
+                            </p>
+                        </div>
+                        <div class="address__password">
+                            <div class="address__password-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7" cy="7" r="6.5" fill="white" fill-opacity="0.5" stroke="#888888" />
+                                    <rect x="6" y="6" width="2" height="4" fill="#C4C4C4" />
+                                    <rect x="6" y="4" width="2" height="1" fill="#C4C4C4" />
+                                </svg>
+                            </div>
+                            <p class="address__password-text">Пароль будет отправлен на почту</p>
+                        </div>
+                    </div>
+                    <div class="address__checkbox-wrapper">
+                        <input class="address__checkbox" type="checkbox" checked="checked">
+                        <p class="address__checkbox-text">
+                            Адрес доставки отличается
+                        </p>
+                    </div>
+                    <input class="address__input" type="text" placeholder="Имя *" id="name">
+                    <input class="address__input" type="text" placeholder="Фамилия *" id="last">
+                    <div class="address__input--block">
+                        <input class="address__input block-street" type="text" placeholder="Улица *" id="street">
+                        <input class="address__input block-house" type="text" placeholder="Дом *" id="house">
+                    </div>
+                    <div class="address__input--block">
+                        <input class="address__input block-zip" type="text" placeholder="Индекс *" id="zip">
+                        <input class="address__input block-city" type="text" placeholder="Город *" id="city">
+                    </div>
+                    <input class="address__input" type="text" placeholder="Страна" id="country">
+                </form>
+            </div>
 
+            <div class="checkout__section">
+                <div class="payments">
+                    <div class="payment">
+                        <div class="payment__info">
+                            <div class="payment__info-group">
+                                <div class="payment__info-wrapper">
+                                    <svg class="payment__info-icon" width="37" height="31" viewBox="0 0 37 31"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.89417 13.6875V20.9375M29.3413 10.0625V17.3125M27.5541 1C31.9306 1 34.2977 1.67925 35.4754 2.20611C35.6323 2.27628 35.7107 2.31136 35.9371 2.53042C36.0727 2.66173 36.3204 3.04703 36.3841 3.22591C36.4904 3.52434 36.4904 3.68747 36.4904 4.01372V23.4952C36.4904 25.1423 36.4904 25.9659 36.2468 26.3892C35.9991 26.8199 35.7601 27.02 35.2964 27.1855C34.8405 27.3482 33.9203 27.1689 32.0797 26.8103C30.7915 26.5593 29.2636 26.375 27.5541 26.375C22.1923 26.375 16.8305 30 9.68144 30C5.30495 30 2.93785 29.3207 1.76007 28.7939C1.60322 28.7237 1.5248 28.6886 1.29845 28.4696C1.16278 28.3383 0.915117 27.953 0.851406 27.7741C0.745117 27.4757 0.745117 27.3125 0.745117 26.9863L0.745118 7.5048C0.745118 5.85766 0.745118 5.03409 0.988682 4.61076C1.23644 4.18015 1.47538 3.97996 1.93912 3.81447C2.39501 3.65178 3.31526 3.8311 5.15578 4.18972C6.44402 4.44074 7.97188 4.625 9.68144 4.625C15.0432 4.625 20.405 1 27.5541 1ZM23.0859 15.5C23.0859 18.0025 21.0855 20.0312 18.6178 20.0312C16.1501 20.0312 14.1496 18.0025 14.1496 15.5C14.1496 12.9975 16.1501 10.9687 18.6178 10.9687C21.0855 10.9687 23.0859 12.9975 23.0859 15.5Z"
+                                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <p class="payment__info-text">Наличными при получении</p>
+                            </div>
+                            <input class="payment__info-checkbox" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <div class="payment__info">
+                            <div class="payment__info-group">
+                                <div class="payment__info-wrapper">
+                                    <svg class="payment__info-icon" width="56" height="19" viewBox="0 0 56 19"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.4765 17.9284H9.7503L6.20621 3.91066C6.03799 3.26584 5.68082 2.69578 5.15542 2.42711C3.84425 1.75192 2.39942 1.21457 0.823242 0.943558V0.403874H8.43682C9.48761 0.403874 10.2757 1.21457 10.407 2.1561L12.2459 12.2676L16.9698 0.403874H21.5647L14.4765 17.9284ZM24.1917 17.9284H19.7281L23.4036 0.403874H27.8671L24.1917 17.9284ZM33.6423 5.259C33.7737 4.31514 34.5618 3.77545 35.4812 3.77545C36.926 3.63995 38.4999 3.91096 39.8134 4.58381L40.6015 0.810694C39.288 0.27101 37.8431 0 36.532 0C32.1998 0 29.0474 2.42741 29.0474 5.79635C29.0474 8.35927 31.2804 9.70497 32.8565 10.5157C34.5618 11.324 35.2185 11.8637 35.0871 12.6721C35.0871 13.8846 33.7737 14.4243 32.4625 14.4243C30.8863 14.4243 29.3101 14.0201 27.8676 13.3449L27.0795 17.1204C28.6557 17.7932 30.3609 18.0642 31.9371 18.0642C36.7947 18.1974 39.8134 15.7723 39.8134 12.1324C39.8134 7.54857 33.6423 7.2799 33.6423 5.259ZM55.4338 17.9284L51.8897 0.403874H48.0829C47.2948 0.403874 46.5067 0.943558 46.244 1.75192L39.6812 17.9284H44.2761L45.1933 15.3679H50.8389L51.3643 17.9284H55.4338ZM48.7413 5.12343L50.0525 11.7281H46.377L48.7413 5.12343Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                                <p class="payment__info-text">Картой при получении</p>
+                            </div>
+                            <input class="payment__info-checkbox" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <div class="payment__info">
+                            <div class="wrapper">
+                                <div class="card">
+                                    <div class="payment__info-group">
+                                        <div class="payment__info-wrapper">
+                                            <svg class="payment__info-icon" width="56" height="19" viewBox="0 0 56 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M14.4765 17.9284H9.7503L6.20621 3.91066C6.03799 3.26584 5.68082 2.69578 5.15542 2.42711C3.84425 1.75192 2.39942 1.21457 0.823242 0.943558V0.403874H8.43682C9.48761 0.403874 10.2757 1.21457 10.407 2.1561L12.2459 12.2676L16.9698 0.403874H21.5647L14.4765 17.9284ZM24.1917 17.9284H19.7281L23.4036 0.403874H27.8671L24.1917 17.9284ZM33.6423 5.259C33.7737 4.31514 34.5618 3.77545 35.4812 3.77545C36.926 3.63995 38.4999 3.91096 39.8134 4.58381L40.6015 0.810694C39.288 0.27101 37.8431 0 36.532 0C32.1998 0 29.0474 2.42741 29.0474 5.79635C29.0474 8.35927 31.2804 9.70497 32.8565 10.5157C34.5618 11.324 35.2185 11.8637 35.0871 12.6721C35.0871 13.8846 33.7737 14.4243 32.4625 14.4243C30.8863 14.4243 29.3101 14.0201 27.8676 13.3449L27.0795 17.1204C28.6557 17.7932 30.3609 18.0642 31.9371 18.0642C36.7947 18.1974 39.8134 15.7723 39.8134 12.1324C39.8134 7.54857 33.6423 7.2799 33.6423 5.259ZM55.4338 17.9284L51.8897 0.403874H48.0829C47.2948 0.403874 46.5067 0.943558 46.244 1.75192L39.6812 17.9284H44.2761L45.1933 15.3679H50.8389L51.3643 17.9284H55.4338ZM48.7413 5.12343L50.0525 11.7281H46.377L48.7413 5.12343Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                        <p class="payment__info-text">Картой онлайн</p>
+                                    </div>
+                                    <input class="payment__info-checkbox" type="checkbox">
+                                </div>
+                                <form class="payment__form">
+                                    <input class="payment__input" type="text" placeholder="Номер карты *" id="number">
+                                    <div class="payment__input--block">
+                                        <input class="payment__input block-date" type="text" placeholder="Дата *"
+                                            id="date">
+                                        <input class="payment__input block-cvc" type="text" placeholder="CVC/CVV *"
+                                            id="cvc">
+                                    </div>
+                                    <input class="payment__input" type="text" placeholder="Имя на карте *" id="name">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout__section">
+                <div class="cart__items">
+                    <div class="item">
+                        <div class="item__image-wrapper">
+                            <img class="item__image" src="assets/image-1.jpg" alt="image-1">
+                        </div>
+                        <div class="item__text">
+                            <h3 class="item__title">Лого “3-4-3”</h3>
+                            <p class="item__size">size m</p>
+                            <p class="item__price">79,00 BYN</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image-wrapper">
+                            <img class="item__image" src="assets/image-2.jpg" alt="image-2">
+                        </div>
+                        <div class="item__text">
+                            <h3 class="item__title">“Горишь”</h3>
+                            <p class="item__size">size l</p>
+                            <p class="item__price">79,00 BYN</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image-wrapper">
+                            <img class="item__image" src="assets/image-3.jpg" alt="image-3">
+                        </div>
+                        <div class="item__text">
+                            <h3 class="item__title">“Футбол”</h3>
+                            <p class="item__size">size s</p>
+                            <p class="item__price">79,00 BYN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__costs">
+                    <div class="cost">
+                        <div class="cost__first">
+                            <p class="cost__title">стоимость</p>
+                            <p class="cost__currency">BYN</p>
+                        </div>
+                        <p class="cost__price">237,00</p>
+                    </div>
+                    <div class="cost">
+                        <div class="cost__first">
+                            <p class="cost__title">доставка</p>
+                            <p class="cost__currency">BYN</p>
+                        </div>
+                        <p class="cost__price">5,00</p>
+                    </div>
+                    <div class="cost">
+                        <div class="cost__first">
+                            <p class="cost__title">ИТОГО</p>
+                            <p class="cost__currency">BYN</p>
+                        </div>
+                        <p class="cost__price">242,00</p>
+                    </div>
+                    <div class="cart__bottom">
+                        <button class="cart__button" type="submit">Оплатить</button>
+                        <div class="cart__terms">
+                            <input class="cart__checkbox" type="checkbox">
+                            <p class="cart__text">Ознакомлен и согласен с <a class="cart__link" href="#">политикой
+                                    конфиденциальности</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
