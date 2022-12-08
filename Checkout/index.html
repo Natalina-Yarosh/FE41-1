@@ -16,7 +16,7 @@
 
 <body>
     <div class="checkout">
-        <div class="checkout__content">
+        <div class="checkout__container">
             <div class="checkout__section">
                 <form class="address">
                     <div class="address__title">
@@ -37,12 +37,10 @@
                     <input class="address__input" type="text" placeholder="Страна" id="country">
                     <input class="address__input" type="text" placeholder="Номер телефона" id="phone">
                     <div class="address__checkbox-group">
-                        <div class="address__checkbox-wrapper">
-                            <input class="address__checkbox" type="checkbox">
-                            <p class="address__checkbox-text">
-                                Создайте учетную запись клиента сейчас и пользуйтесь преимуществами.
-                            </p>
-                        </div>
+                        <label class="address__checkbox-wrapper">
+                            <input class="address__checkbox" type="checkbox" />
+                            Создайте учетную запись клиента сейчас и пользуйтесь преимуществами.
+                        </label>
                         <div class="address__password">
                             <div class="address__password-icon">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -55,12 +53,10 @@
                             <p class="address__password-text">Пароль будет отправлен на почту</p>
                         </div>
                     </div>
-                    <div class="address__checkbox-wrapper">
-                        <input class="address__checkbox" type="checkbox" checked="checked">
-                        <p class="address__checkbox-text">
-                            Адрес доставки отличается
-                        </p>
-                    </div>
+                    <label class="address__checkbox-wrapper">
+                        <input class="address__checkbox" type="checkbox" checked />
+                        Адрес доставки отличается
+                    </label>
                     <input class="address__input" type="text" placeholder="Имя *" id="name">
                     <input class="address__input" type="text" placeholder="Фамилия *" id="last">
                     <div class="address__input--block">
@@ -90,7 +86,9 @@
                                 </div>
                                 <p class="payment__info-text">Наличными при получении</p>
                             </div>
-                            <input class="payment__info-checkbox" type="checkbox">
+                            <label class="payment__info-checkbox-wrapper">
+                                <input class="payment__info-checkbox" type="checkbox" />
+                            </label>
                         </div>
                     </div>
                     <div class="payment">
@@ -106,7 +104,9 @@
                                 </div>
                                 <p class="payment__info-text">Картой при получении</p>
                             </div>
-                            <input class="payment__info-checkbox" type="checkbox">
+                            <label class="payment__info-checkbox-wrapper">
+                                <input class="payment__info-checkbox" type="checkbox" />
+                            </label>
                         </div>
                     </div>
                     <div class="payment">
@@ -124,7 +124,9 @@
                                         </div>
                                         <p class="payment__info-text">Картой онлайн</p>
                                     </div>
-                                    <input class="payment__info-checkbox" type="checkbox">
+                                    <label class="payment__info-checkbox-wrapper">
+                                        <input class="payment__info-checkbox" type="checkbox" checked />
+                                    </label>
                                 </div>
                                 <form class="payment__form">
                                     <input class="payment__input" type="text" placeholder="Номер карты *" id="number">
@@ -149,8 +151,10 @@
                             <img class="item__image" src="assets/image-1.jpg" alt="image-1">
                         </div>
                         <div class="item__text">
-                            <h3 class="item__title">Лого “3-4-3”</h3>
-                            <p class="item__size">size m</p>
+                            <div class="item__info">
+                                <h3 class="item__title">Лого “3-4-3”</h3>
+                                <p class="item__size">size m</p>
+                            </div>
                             <p class="item__price">79,00 BYN</p>
                         </div>
                     </div>
@@ -159,8 +163,10 @@
                             <img class="item__image" src="assets/image-2.jpg" alt="image-2">
                         </div>
                         <div class="item__text">
-                            <h3 class="item__title">“Горишь”</h3>
-                            <p class="item__size">size l</p>
+                            <div class="item__info">
+                                <h3 class="item__title">“Горишь”</h3>
+                                <p class="item__size">size l</p>
+                            </div>
                             <p class="item__price">79,00 BYN</p>
                         </div>
                     </div>
@@ -169,8 +175,10 @@
                             <img class="item__image" src="assets/image-3.jpg" alt="image-3">
                         </div>
                         <div class="item__text">
-                            <h3 class="item__title">“Футбол”</h3>
-                            <p class="item__size">size s</p>
+                            <div class="item__info">
+                                <h3 class="item__title">“Футбол”</h3>
+                                <p class="item__size">size s</p>
+                            </div>
                             <p class="item__price">79,00 BYN</p>
                         </div>
                     </div>
@@ -199,11 +207,11 @@
                     </div>
                     <div class="cart__bottom">
                         <button class="cart__button" type="submit">Оплатить</button>
-                        <div class="cart__terms">
-                            <input class="cart__checkbox" type="checkbox">
+                        <label class="cart__terms">
+                            <input class="cart__checkbox" type="checkbox" checked />
                             <p class="cart__text">Ознакомлен и согласен с <a class="cart__link" href="#">политикой
                                     конфиденциальности</a></p>
-                        </div>
+                        </label>
                     </div>
                 </div>
             </div>
