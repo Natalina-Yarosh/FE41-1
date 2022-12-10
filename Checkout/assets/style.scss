@@ -20,6 +20,15 @@
         @media(min-width:769px) and (max-width: 1440px) {
             display: none;
         }
+
+        @media(min-width:321px) and (max-width: 768px) {
+            width: 296px;
+            height: 492px;
+            display: block;
+            position: absolute;
+            top: 1300px;
+            background-image: url(../assets/background-tablet.svg);
+        }
     }
 
     &__container {
@@ -32,6 +41,12 @@
             display: flex;
             margin: 0 auto;
             padding-left: 204px;
+        }
+
+        @media(min-width:321px) and (max-width: 768px) {
+            column-gap: 3px;
+            padding-left: 18px;
+            padding-right: 16px;
         }
     }
 
@@ -46,22 +61,35 @@
         @media(min-width:769px) and (max-width: 1440px) {
             margin-left: 100px;
         }
+
+        @media(min-width:321px) and (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__section {
         &:first-of-type {
-            border: 1px solid red;
             display: flex;
             column-gap: 84px;
 
             @media(min-width:769px) and (max-width: 1440px) {
                 display: block;
             }
+
+            @media(min-width:321px) and (max-width: 768px) {
+                display: block;
+                order: 1;
+            }
         }
 
         &:last-of-type {
             max-width: 526px;
             width: 100%;
+
+            @media(min-width:321px) and (max-width: 768px) {
+                max-width: 356px;
+                width: 100%;
+            }
         }
     }
 }
@@ -77,6 +105,12 @@
 
     @media(min-width:769px) and (max-width: 1440px) {
         margin-bottom: 13px;
+    }
+
+    @media(min-width:321px) and (max-width: 768px) {
+        padding: 21px 6px 21px 9px;
+        max-width: 375px;
+        width: 100%;
     }
 
     &__title {
@@ -200,6 +234,12 @@
     max-width: 421px;
     width: 100%;
 
+    @media(min-width:321px) and (max-width: 768px) {
+        row-gap: 9px;
+        max-width: 375px;
+        width: 100%;
+    }
+
     .payment {
         background: rgba(255, 255, 255, 0.5);
 
@@ -216,6 +256,10 @@
             &-checkbox-wrapper {
                 margin-right: 20px;
 
+                @media(min-width:321px) and (max-width: 768px) {
+                    margin-right: 18px;
+                }
+
                 .payment__info-checkbox {
                     appearance: none;
                     background: rgba(255, 255, 255, 0.5);
@@ -226,12 +270,22 @@
                     display: grid;
                     place-content: center;
 
+                    @media(min-width:321px) and (max-width: 768px) {
+                        width: 17px;
+                        height: 17px;
+                    }
+
                     &::before {
                         content: "";
                         width: 19px;
                         height: 19px;
                         transform: scale(0);
                         background-color: #000000;
+
+                        @media(min-width:321px) and (max-width: 768px) {
+                            width: 17px;
+                            height: 17px;
+                        }
                     }
 
                     &:checked::before {
@@ -242,6 +296,11 @@
                         border: 1px solid #000000;
                         width: 25px;
                         height: 25px;
+
+                        @media(min-width:321px) and (max-width: 768px) {
+                            width: 23px;
+                            height: 23px;
+                        }
                     }
                 }
             }
@@ -256,6 +315,20 @@
                 justify-content: center;
                 align-items: center;
                 padding: 5px;
+
+                @media(min-width:321px) and (max-width: 768px) {
+                    width: 55px;
+                    height: 35px;
+                    border-radius: 5.34px;
+                    margin: 0 13px 0 21px;
+                }
+
+                .payment__info-icon {
+                    @media(min-width:321px) and (max-width: 768px) {
+                        width: 32px;
+                        height: 26px;
+                    }
+                }
             }
 
             &-text {
@@ -264,6 +337,11 @@
                 line-height: 18px;
                 color: rgba(0, 0, 0, 0.85);
                 margin: 33px 0;
+
+                @media(min-width:321px) and (max-width: 768px) {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
             }
 
             .wrapper {
@@ -274,6 +352,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+
+                    @media(min-width:321px) and (max-width: 768px) {
+                        margin-bottom: 17px;
+                    }
                 }
 
                 .payment__form {
@@ -282,6 +364,11 @@
                     row-gap: 15px;
                     padding: 19px 17px 32px 23px;
                     width: 100%;
+
+                    @media(min-width:321px) and (max-width: 768px) {
+                        row-gap: 13.36px;
+                        padding: 17px 15px 28.5px 20.5px;
+                    }
 
                     .payment__input {
                         background: rgba(255, 255, 255, 0.5);
@@ -293,9 +380,20 @@
                         color: rgba(130, 130, 130, 0.85);
                         padding: 15px 0 12px 18px;
 
+                        @media(min-width:321px) and (max-width: 768px) {
+                            border-radius: 5.34px;
+                            font-size: 13px;
+                            line-height: 16px;
+                            padding: 13px 0 11px 17px;
+                        }
+
                         &--block {
                             display: flex;
                             column-gap: 15px;
+
+                            @media(min-width:321px) and (max-width: 768px) {
+                                column-gap: 13.36px;
+                            }
 
                             .block-date {
                                 width: 40%;
@@ -322,12 +420,21 @@
         margin-bottom: 0;
     }
 
+    @media(min-width:321px) and (max-width: 768px) {
+        margin-bottom: 0;
+    }
+
     .item {
         border-bottom: 2px solid #FFFFFF;
         display: grid;
         grid-template-columns: 169px 1fr;
         column-gap: 10px;
         padding: 35px 25px 35px 47px;
+
+        @media(min-width:321px) and (max-width: 768px) {
+            column-gap: 18px;
+            padding: 35px 4px 35px 8px;
+        }
 
         &__info {
             display: flex;
@@ -362,6 +469,10 @@
             justify-content: flex-end;
             height: 50%;
             align-items: flex-end;
+
+            @media(min-width:321px) and (max-width: 768px) {
+                justify-content: flex-start;
+            }
         }
 
         &__image-wrapper {
@@ -393,6 +504,10 @@
         display: flex;
         padding: 27px 17px 6px 31px;
         justify-content: space-between;
+
+        @media(min-width:321px) and (max-width: 768px) {
+            padding-left: 37px;
+        }
 
         &__first {
             display: flex;
@@ -430,6 +545,10 @@
         display: flex;
         flex-direction: column;
 
+        @media(min-width:321px) and (max-width: 768px) {
+            padding-bottom: 49px;
+        }
+
         .cart__button {
             background: #0E0E0F;
             border-radius: 6px;
@@ -447,6 +566,10 @@
             text-align: center;
             display: block;
             cursor: pointer;
+
+            @media(min-width:321px) and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
         }
 
         .cart__terms {
@@ -458,6 +581,11 @@
             color: rgba(130, 130, 130, 0.85);
             justify-content: center;
 
+            @media(min-width:321px) and (max-width: 768px) {
+                gap: 34px;
+                padding-left: 34px;
+            }
+
             .cart__checkbox {
                 appearance: none;
                 background-color: #fff;
@@ -468,6 +596,10 @@
                 transform: translateY(-0.3em);
                 display: grid;
                 place-content: center;
+
+                @media(min-width:321px) and (max-width: 768px) {
+                    transform: translateY(0.3em);
+                }
 
                 &::before {
                     content: "";
