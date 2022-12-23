@@ -1,21 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <title>ProductDetailPage</title>
 </head>
-
 <body>
-
+    <section class="detail-info">
+        <div class="container">
+            <a class="btn-back" href="#">
+                <svg class="btn-back__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.4369 26.3335C29.5551 31.3152 24.1689 34.6668 17.9999 34.6668C8.79517 34.6668 1.33325 27.2049 1.33325 18.0002C1.33325 8.79542 8.79517 1.3335 17.9999 1.3335C24.1689 1.3335 29.5551 4.68515 32.4369 9.66683M18 11.3335L11.3334 18.0002M11.3334 18.0002L18 24.6668M11.3334 18.0002H34.6667" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="detail-info__content">
+                <div class="detail-info__content-left">
+                    <div class="detail-info__photo-wrap">
+                        <img class="detail-info__photo" src="/assets/img/photo_0.jpg" alt="0">
+                    </div>
+                    <ul class="detail-info__gallery">
+                        <li class="detail-info__img-wrap">
+                            <img class="detail-info__img" src="/assets/img/photo_1.jpg" alt="1">
+                        </li>
+                        <li class="detail-info__img-wrap">
+                            <img class="detail-info__img" src="/assets/img/photo_2.jpg" alt="2">
+                        </li>
+                        <li class="detail-info__img-wrap">
+                            <img class="detail-info__img" src="/assets/img/photo_3.jpg" alt="3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="detail-info__content-right">
+                    <div class="detail-info__descr">
+                        <h2 class="detail-info__title">Футболка “ГОРИШЬ”</h2>
+                        <p class="detail-info__price">79.00 BYN</p>
+                        <p class="detail-info__text-1">
+                            «Горишь» - подсказ №1 в футболе. И совсем не важно где и с кем ты играешь.
+                        </p>
+                        <p class="detail-info__text-2">
+                            В любом случае, тебе приходилось слышать это в свой адрес. 
+                        </p>  
+                    </div>
+                    <form class="detail-info__form">
+                        <div class="detail-info__size">
+                            <div class="detail-info__size-wrap">
+                                <input class="detail-info__size-s-btn" type="radio" id="size-s">
+                                <label class="detail-info__size-s-label" for="size-s"></label>
+                            </div>
+                            <div class="detail-info__size-wrap">
+                                <input class="detail-info__size-m-btn" type="radio" id="size-m">
+                                <label class="detail-info__size-m-label" for="size-m"></label>
+                            </div>
+                            <div class="detail-info__size-wrap">
+                                <input class="detail-info__size-l-btn" type="radio" id="size-l">
+                                <label class="detail-info__size-l-label" for="size-l"></label>
+                            </div>
+                            <div class="detail-info__size-wrap">
+                                <input class="detail-info__size-xl-btn" type="radio" id="size-xl">
+                                <label class="detail-info__size-xl-label" for="size-xl"></label>
+                            </div>
+                        </div>
+                        <div class="detail-info__group-btn">
+                            <div class="detail-info__amount-wrap">
+                                <div class="detail-info__amount-btn">
+                                    <svg class="detail-info__amount-btn-less" width="16" height="2" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0.5H16" stroke="black"/>
+                                    </svg>
+                                </div>
+                                <div class="detail-info__amount-input">
+                                    <input class="detail-info__amount-input-area" type="text" placeholder="1">
+                                </div>
+                                <div class="detail-info__amount-btn">
+                                    <svg class="detail-info__amount-btn-more" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 0L8.5 15M0 6.5H16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="detail-info__buy-btn" type="submit">купить</button>
+                            <div class="detail-info__checkbox-wrap">
+                                <input class="detail-info__checkbox" type="checkbox" id="check">
+                                <label class="detail-info__checkbox-label" for="check"></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="detail-about">
+        <div class="container">
+            <div class="detail-about__img-wrap">
+                <img class="detail-about__img" src="/assets/img/photo_4.jpg" alt="4">
+            </div>
+            <div class="detail-about__descr">
+                <p class="detail-about__descr-text">Гори чтобы светить!</p>
+                <p class="detail-about__descr-text">Стиль: унисекс</p>
+                <p class="detail-about__descr-text">Крой: oversize</p>
+                <p class="detail-about__descr-text">Размерный ряд: S-XL</p>
+                <p class="detail-about__descr-text">Состав:</p>
+                <p class="detail-about__descr-text">Хлопок - 92%,</p>
+                <p class="detail-about__descr-text">Эластан - 8%</p>
+                <p class="detail-about__descr-text">Нанесение: Flock</p>
+                <p class="detail-about__descr-text">Доставка: по всему миру</p>
+            </div>
+            <button class="detail-about__btn">купить</button>
+            <div class="detail-about__line">
+                <img class="detail-about__line-img" src="/assets/img/line.svg">
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
